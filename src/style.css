@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Uniform';
+  src: url('./uniform.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Samosan';
+  src: url('./samosan.ttf') format('ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+.hello {
+  color: red;
+  font-family: 'Samosan';
+}
+
+body {
+  background: url('./mountains.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
