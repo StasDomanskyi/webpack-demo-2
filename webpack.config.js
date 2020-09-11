@@ -13,10 +13,19 @@ module.exports = {
     contentBase: './dist',
     port: 9000,
   },
+/*   module: {
+    rules: [
+      {
+        test: /\.html$/,
+        use: 'html-loader',
+      }
+    ],
+  }, */
   plugins: [
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false}),
     new HtmLWebpackPlugin({
-      title: 'Output Management',
+      template: __dirname + '/src/index.html',
+      inject: 'body'
     }),
   ],
   output: {
